@@ -2,8 +2,6 @@
 using System;
 using ScriptCs;
 using ScriptCs.Contracts;
-//using log4net;
-//using Common.Logging.Log4Net;
 using ScriptCs.Engine.Mono;
 using ScriptCs.Hosting;
 using Common.Logging;
@@ -19,7 +17,6 @@ namespace ScriptCsHostingTest
 		{
 			var console = new ScriptConsole ();
 			logger = LogManager.GetLogger (System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-			//var myLogger = new MyLogger (logger);
 			var builder = new ScriptServicesBuilder (console, logger, null);
 			builder
 				.LogLevel (ScriptCs.Contracts.LogLevel.Debug)
