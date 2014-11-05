@@ -7,7 +7,6 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ScriptCsHostingTest</RootNamespace>
     <AssemblyName>ScriptCsHostingTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -31,64 +30,61 @@
     <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac">
-      <HintPath>packages\Autofac.3.5.0\lib\net40\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Logging">
-      <HintPath>packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>packages\ICSharpCode.NRefactory.5.4.0\lib\Net40\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.Cecil">
-      <HintPath>packages\ICSharpCode.NRefactory.5.4.0\lib\Net40\ICSharpCode.NRefactory.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.CSharp">
-      <HintPath>packages\ICSharpCode.NRefactory.5.4.0\lib\Net40\ICSharpCode.NRefactory.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.Xml">
-      <HintPath>packages\ICSharpCode.NRefactory.5.4.0\lib\Net40\ICSharpCode.NRefactory.Xml.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="ScriptCs.Contracts">
-      <HintPath>packages\ScriptCs.Contracts.0.10.2\lib\net45\ScriptCs.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="ScriptCs.Core">
-      <HintPath>packages\ScriptCs.Core.0.10.2\lib\net45\ScriptCs.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="ScriptCs.Engine.Mono">
-      <HintPath>packages\ScriptCs.Engine.Mono.0.10.2\lib\net45\ScriptCs.Engine.Mono.dll</HintPath>
-    </Reference>
-    <Reference Include="ScriptCs.Hosting">
-      <HintPath>packages\ScriptCs.Hosting.0.10.2\lib\net45\ScriptCs.Hosting.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="Mono.CSharp">
-      <HintPath>packages\Mono.CSharp.3.4.0\lib\net40\Mono.CSharp.dll</HintPath>
+    <Reference Include="Autofac">
+      <HintPath>lib\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Autofac.Integration.Mef">
-      <HintPath>packages\Autofac.Mef.3.0.3\lib\net40\Autofac.Integration.Mef.dll</HintPath>
+      <HintPath>lib\Autofac.Integration.Mef.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.CSharp">
+      <HintPath>lib\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>lib\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.Xml">
+      <HintPath>lib\ICSharpCode.NRefactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.XmlTransform">
-      <HintPath>packages\Microsoft.Web.Xdt.2.1.1\lib\net40\Microsoft.Web.XmlTransform.dll</HintPath>
+      <HintPath>lib\Microsoft.Web.XmlTransform.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>lib\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>lib\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>lib\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>lib\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp">
+      <HintPath>lib\Mono.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NuGet.Core">
-      <HintPath>packages\NuGet.Core.2.8.2\lib\net40-Client\NuGet.Core.dll</HintPath>
+      <HintPath>lib\NuGet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptCs.Contracts">
+      <HintPath>lib\ScriptCs.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptCs.Core">
+      <HintPath>lib\ScriptCs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptCs.Engine.Mono">
+      <HintPath>lib\ScriptCs.Engine.Mono.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptCs.Hosting">
+      <HintPath>lib\ScriptCs.Hosting.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -100,7 +96,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="app.config" />
     <None Include="Test.csx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
